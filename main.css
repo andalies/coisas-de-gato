@@ -1,0 +1,175 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: #fee1ee;
+    font-family: "Lora", serif;
+    
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    text-align: center;
+    padding: 16px 0;
+    color: rgb(114, 27, 79);
+    font-family: "Sacramento", cursive;
+}
+
+
+header nav li {
+    display: inline;
+    margin-left: 16px;
+    font-size: 30px;
+}
+
+header nav li a {
+    color: #d45368;
+    text-decoration: none;
+}
+
+
+header h1 {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+.container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    }
+
+
+h2 {
+    font-family: "Sacramento", cursive; 
+    font-size: 35px; 
+    color: rgb(114, 27, 79);
+}
+
+#about img {
+    max-width: 300px;
+    padding-right: 32px;
+}
+
+#foto-loja {
+    display: flex;
+}
+
+.sobre-loja {
+    display: block;
+    margin-left: 32px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.sobre-loja h2 {
+    margin-bottom: 2px;
+    color: rgb(114, 27, 79);
+}
+
+section {
+    align-items: center;
+    justify-content:center;
+    vertical-align: center;
+}
+
+.produtos ul{
+    list-style: none;
+}
+
+.produtos img{                                                                                                                                                       
+    width: 100%;
+    height: 50%;
+    object-fit: cover;
+}
+
+.produtos-gato {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+    text-align: center;
+}        
+
+.produtos-gato button {
+    font-family: "Lora", serif;
+    background-color: #eb9fab;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1em;
+}
+
+.produtos-gato button:hover{
+    background-color: #d72176;
+}
+
+.produtos-gato h3{
+    margin-top: 24px;
+    margin-bottom: 10px;
+    font-size: 22px;
+    text-align: center;
+}
+
+.produtos-gato p{
+    text-align: center;
+    font-weight: lighter;
+    margin-bottom: 20px;
+}
+
+.produtos li {
+    display: block;
+    align-items: center;
+    padding: 8px;
+    overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+    section .container {
+        display: block;
+        align-items: center;
+    }
+
+    #about, #foto-loja {
+        display: block;
+        max-width: 90%;
+    }
+
+    .produtos-gato {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px 5px;
+        text-align: center;
+    }
+    .produtos-gato img {
+        max-width: 90%;
+    }
+    
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    
+    .container {
+        max-width: 90%;
+    }
+
+    section .container {
+        display: block;
+        align-items: center;
+    }
+
+
+    .produtos-gato {
+        grid-template-columns: repeat(2, 49.5%);
+        padding-bottom: 2em;
+    }
+
+}
