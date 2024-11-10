@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coisas de gato</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
     <link rel="shortcut icon" type="image" href="./images/logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +13,7 @@
 
 </head>
 <body>
+    <script src="./lib/bootstrap.bundle.min.js"></script>
     <header>
         <div class="container">
             <h1>Coisas de gato</h1>
@@ -30,56 +32,73 @@
         </div>
     </header>
     <section id="about">
-        <div class="container" id="foto-loja">
-            <img src="./images/loja.png" alt="loja pixelada">
-            <div class="sobre-loja">
-                <h2>Sobre a loja</h2>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint, hic? Labore tempore facere quasi assumenda quos sequi quidem magnam beatae maxime. Facilis consequuntur hic vitae perferendis deserunt quisquam, repellendus nisi.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda sequi, recusandae odio necessitatibus animi cumque commodi quo eos consequuntur error tenetur fugit, ut culpa quibusdam. Voluptates quas officiis eos beatae!
-                </p>
-        
+        <div class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+            <div data-bs-interval="3000" class="carousel-item active">
+                <img src="./images/slide1.jpg" />
             </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img src="./images/slide6.jpg" />
+            </div>
+            <div data-bs-interval="3000" class="carousel-item">
+                <img src="./images/slide3.jpg" />
+            </div>
+
         </div>
+        <div id="sobre-a-loja" class="container">
+            <h2>Sobre nós</h2>
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas ex doloremque vero ad in labore explicabo reprehenderit velit officia mollitia. Molestiae corrupti itaque, quia dolorem iusto obcaecati cumque nemo sint.
+            </p>
+        </div>
+        
     </section>
+    <section id="produtos">
     <div class="container">
-        <div class="produtos" id="produtosgato">
+        <div class="row" id="produtosgato">
             <h2>Produtos</h2>
-            <div>
-                <ul class="produtos-gato">
-                    <li>
-                        <img src="./images/bed.jpeg" alt="cama de gato">
-                        <h3>Cama fofinha</h3>
-                        <p>Cama fofinha para seu gato</p>
-                        <h3>R$ 99,99</h3>
-                        <button type="button">Adicionar ao Carrinho</button>
-                    </li>
-                    <li>
-                        <img src="./images/feeder.jpeg" alt="feeder">
-                        <h3>Pratinhos</h3>
-                        <p>Comedouros em porcelana</p>
-                        <h3>R$ 49,00</h3>
-                        <button type="button">Adicionar ao Carrinho</button>
-                    </li>
-                    <li>
-                        <img src="./images/oca.jpeg" alt="oca">
-                        <h3>Oca Quentinha</h3>
-                        <p>Uma oca bem quentinha para seu gatinho</p>
-                        <h3>R$ 149,99</h3>
-                        <button type="button">Adicionar ao Carrinho</button>
-                    </li>
-                    <li>
-                        <img src="./images/toy.jpeg" alt="toy">
-                        <h3>Brinquedo fofinho</h3>
-                        <p>Para brincar com seu gatinho</p>
-                        <h3>R$ 100,00</h3>
-                        <button type="button">Adicionar ao Carrinho</button>
-                    </li>
-                </ul>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card m-5 rounded-pill text-center overflow-hidden border-0 shadow mx-auto" style="width: 18rem;">
+                    <img src="./images/oca.jpeg" alt="oca">
+                        <div class="card-body"> 
+                            <h5 class="card-title fw-bold">Oca quentinha</h5>
+                            <p class="card-text">Oca bem quentinha para ele dormir</p>
+                            <a href="#" class="btn btn-light">Adicionar ao Carrinho</a>
+                            <p class="mt-3">R$ 209,99</p>
+
+                        </div>
+                        
+                </div>
             </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card m-5 rounded-pill text-center overflow-hidden border-0 shadow mx-auto" style="width: 18rem;">
+                    <img src="./images/toy.jpeg" alt="brinquedo">
+                        <div class="card-body"> 
+                            <h5 class="card-title fw-bold">Brinquedo bonitinho</h5>
+                            <p class="card-text">Para brincar com seu gatinho</p>
+                            <a href="#" class="btn btn-light">Adicionar ao Carrinho</a>
+                            <p class="mt-3">R$ 89,99</p>
+
+                        </div>
+                        
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-4">
+                <div class="card m-5 rounded-pill text-center overflow-hidden border-0 shadow mx-auto" style="width: 18rem;">
+                    <img src="./images/bed.jpeg" alt="cama de gato">
+                        <div class="card-body"> 
+                            <h5 class="card-title fw-bold">Cama de gato</h5>
+                            <p class="card-text">Cama fofinha para seu gato</p>
+                            <a href="#" class="btn btn-light">Adicionar ao Carrinho</a>
+                            <p class="mt-3">R$ 99,99</p>
+
+                        </div>
+                        
+                </div>
+            </div>
+            
         </div>
     </div>
+    </section>
 </body>
 </html>
